@@ -2,36 +2,70 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joki Tugas</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Joki Tugas</h1>
-    <p>Males nugas? Serahin aja ke kami!</p>
+    <p>Bantu kamu menyelesaikan tugas dengan cepat dan tepat!</p>
   </header>
 
-  <section class="services">
-    <h2>Layanan Kami</h2>
-    <ul>
-      <li>Tugas Sekolah (SD, SMP, SMA)</li>
-      <li>Tugas Kuliah (Makalah, PPT, Laporan, Coding, dll)</li>
-      <li>Editing Video & Desain</li>
-    </ul>
-  </section>
+  <main>
+    <section class="hero">
+      <h2>Kami siap bantu tugas kamu!</h2>
+      <p>Tugas sekolah, kuliah, laporan, desain? Semua bisa!</p>
+      <a href="https://wa.me/6287748683391" class="cta">Chat via WhatsApp</a>
+    </section>
 
-  <section class="contact">
-    <h2>Hubungi Kami</h2>
-    <p>Whatsapp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
-    <p>Email: <a href="mailto:jokitugas@example.com">jokitugas@example.com</a></p>
-  </section>
+    <section class="features">
+      <h3>Kenapa pilih kami?</h3>
+      <ul>
+        <li>⚡ Cepat & Tepat Waktu</li>
+        <li>✅ Hasil Berkualitas</li>
+        <li>🧑‍🏫 Dikerjakan oleh Tim Profesional</li>
+        <li>💸 Harga Terjangkau</li>
+      </ul>
+    </section>
+
+    <section class="formulir">
+      <h3>Kirim Permintaan Tugas</h3>
+      <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Nama kamu..." />
+
+        <label for="jenis">Jenis Tugas</label>
+        <input type="text" id="jenis" placeholder="Makalah, PPT, Coding, dll..." />
+
+        <label for="detail">Detail Tugas</label>
+        <textarea id="detail" rows="5" placeholder="Deskripsikan tugas kamu..."></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Joki Tugas. All rights reserved.</p>
+    &copy; 2025 Joki Tugas. All rights reserved.
   </footer>
 
-  <!-- Opsional JS -->
-  <script src="script.js"></script>
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const nama = document.getElementById("nama").value;
+      const jenis = document.getElementById("jenis").value;
+      const detail = document.getElementById("detail").value;
+  
+      const pesan = Halo kak, saya ${nama}. Saya mau joki tugas untuk:\n\nJenis: ${jenis}\nDetail: ${detail};
+  
+      const encodedPesan = encodeURIComponent(pesan);
+      const noWA = "6287748683391"; // Nomor WhatsApp kamu
+  
+      window.open(https://wa.me/${noWA}?text=${encodedPesan}, "_blank");
+    });
+  </script>
 </body>
 </html>

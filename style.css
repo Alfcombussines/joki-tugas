@@ -1,91 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #f1f3f6;
+  }
+  
+  body {
+    background: #f5f7fb;
     color: #333;
-}
-
-header {
+    line-height: 1.6;
+  }
+  
+  header {
     background: linear-gradient(to right, #4e54c8, #8f94fb);
     color: white;
     text-align: center;
     padding: 3em 1em;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-main {
-    padding: 2em;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  main {
+    padding: 2em 1.5em;
     max-width: 800px;
     margin: auto;
-}
-
-section {
+  }
+  
+  section {
     background: white;
     padding: 2em;
-    margin-bottom: 2em;
+    margin: 2em 0;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: scale(1.01);
-}
-
-label {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  }
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .hero .cta {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background: #4e54c8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .cta:hover {
+    background: #3c40a3;
+  }
+  
+  .features ul {
+    list-style: none;
+    padding-left: 1em;
+  }
+  
+  .features li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+  }
+  
+  form label {
     display: block;
-    margin-top: 1.5em;
+    margin-top: 1em;
     font-weight: 600;
-}
-
-input, textarea {
+  }
+  
+  input, textarea {
     width: 100%;
     padding: 0.75em;
     margin-top: 0.5em;
-    border-radius: 8px;
     border: 1px solid #ccc;
+    border-radius: 8px;
     font-size: 1em;
-}
-
-button {
+  }
+  
+  button {
     margin-top: 1.5em;
     background: #4e54c8;
     color: white;
     border: none;
     padding: 0.75em 2em;
-    font-size: 1em;
-    cursor: pointer;
     border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
     transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #3b40b3;
-}
-
-ul {
-    margin-top: 1em;
-    padding-left: 1.2em;
-}
-
-footer {
+  }
+  
+  button:hover {
+    background: #3c40a3;
+  }
+  
+  footer {
     text-align: center;
     padding: 2em;
-    background-color: #eee;
     font-size: 0.9em;
-    border-top: 1px solid #ccc;
-    margin-top: 2em;
-}
+    color: #666;
+  }
